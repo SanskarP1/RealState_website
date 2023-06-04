@@ -7,9 +7,7 @@
 }
 body {
   min-height: 100vh;
-  /* background-color: burlywood; */
-  /* background-image: url("https://www.build-review.com/wp-content/uploads/2020/07/luxury-real-estate.jpg"); */
-  background-size: cover;
+ background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   overflow-y: scroll;
@@ -204,12 +202,16 @@ header{
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/* gallery ratings and images */
+
 .gallary-container{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
+
 div.gallery {
   margin: 10px;
   border: 1px solid #ccc;
@@ -217,6 +219,7 @@ div.gallery {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
   padding: 10px;
   transition: transform 0.3s;
+  height: calc(350px + 20px);
 }
 
 div.gallery:hover {
@@ -229,10 +232,6 @@ div.gallery img {
   width: 100%;
   height: auto;
   transition: transform 0.3s;
-}
-
-div.gallery:hover img {
-  transform: scale(1.1);
 }
 
 div.desc {
@@ -262,4 +261,111 @@ div.star-rating > span:before {
   position: absolute;
   color: gold;
 }
+.star-rating > span:hover:before,
+.star-rating > span:hover ~ span:before {
+  color: grey;
+}
 
+.star-rating.selected > span:before,
+.star-rating.selected > span ~ span:before {
+  color: gold;
+}
+
+/*footer */
+/* footer {
+  background-color: #8B4513;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-text h2,
+.footer-contact h2 {
+  color: #fff;
+}
+
+.footer-text p,
+.footer-contact ul li {
+  color: #fff;
+}
+
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact ul li {
+  margin-bottom: 10px;
+}
+
+.footer-contact ul li i {
+  margin-right: 10px;
+} */
+
+#footer {
+  background-color: #8B4513;
+  color: #fff;
+  padding: 20px;
+}
+
+.container.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-disc {
+  flex: 1;
+  max-width: 33%;
+  padding: 50px;
+}
+
+.contact-item {
+  margin-bottom: 20px;
+}
+
+.container-fluid.text-center {
+  padding-top: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.col-md-8.col-md-offset-2 {
+  flex: 1;
+  max-width: 66%;
+}
+
+.social ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social ul li {
+  margin: 0 10px;
+}
+
+.social ul li a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.social ul li a:hover {
+  color: #ccc;
+}
