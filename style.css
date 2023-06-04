@@ -204,4 +204,62 @@ header{
   from {opacity: .4}
   to {opacity: 1}
 }
+.gallary-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+div.gallery {
+  margin: 10px;
+  border: 1px solid #ccc;
+  float: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+div.gallery:hover {
+
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+div.gallery:hover img {
+  transform: scale(1.1);
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.reviews {
+  padding: 10px;
+  text-align: center;
+}
+
+div.star-rating {
+  display: inline-block;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+div.star-rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+
+div.star-rating > span:before {
+  content: "\2605";
+  position: absolute;
+  color: gold;
+}
 
