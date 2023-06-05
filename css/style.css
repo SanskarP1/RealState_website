@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-
+scroll-behavior: smooth;
 }
 body {
   min-height: 100vh;
@@ -47,8 +47,9 @@ header{
 
 }
 .navbar .logo a{
-  font-size: 1.5rem;
+  font-size: 25px;
   font-weight: bold;
+  color: aliceblue;
 }
 .navbar .logo a:hover{
   color: aliceblue;
@@ -117,11 +118,12 @@ header{
 }
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 800px;
   position: relative;
-  margin:0 auto;
-  padding: 30px;
+  margin: 0 auto;
+  padding: 50px;
   box-sizing: border-box;
+  overflow: hidden; /* Added overflow to hide the overflowing content */
 }
 
 /* Hide the images by default */
@@ -140,7 +142,7 @@ header{
   color: white;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
+  transition: 1.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
@@ -153,7 +155,7 @@ header{
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -185,7 +187,7 @@ header{
   background-color: rgb(0, 0, 0);
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 1.6s ease;
 }
 
 .active, .dot:hover {
@@ -195,13 +197,38 @@ header{
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 3s; /* Adjust the duration for a slower sliding effect */
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
 }
+
+/* Additional styles for the card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 1.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
 
 /* gallery ratings and images */
 
@@ -319,17 +346,18 @@ div.star-rating > span:before {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px;
 }
 
 .row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .footer-disc {
   flex: 1;
   max-width: 33%;
-  padding: 50px;
+  
 }
 
 .contact-item {
@@ -368,4 +396,8 @@ div.star-rating > span:before {
 
 .social ul li a:hover {
   color: #ccc;
+}
+
+.footer-row{
+  width: 100%;
 }
