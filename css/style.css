@@ -286,56 +286,18 @@ div.star-rating > span {
 div.star-rating > span:before {
   content: "\2605";
   position: absolute;
-  color: gold;
+  color: grey; /* Set the default color to grey */
 }
-.star-rating > span:hover:before,
-.star-rating > span:hover ~ span:before {
-  color: grey;
+
+div.star-rating > span:hover:before,
+div.star-rating > span:hover ~ span:before {
+  color: gold; /* Change the color to gold when hovered */
 }
 
 .star-rating.selected > span:before,
 .star-rating.selected > span ~ span:before {
-  color: gold;
+  color: gold; /* Keep the color as gold for selected stars */
 }
-
-/*footer */
-/* footer {
-  background-color: #8B4513;
-  color: #fff;
-  padding: 20px;
-}
-
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.footer-text h2,
-.footer-contact h2 {
-  color: #fff;
-}
-
-.footer-text p,
-.footer-contact ul li {
-  color: #fff;
-}
-
-.footer-contact ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-contact ul li {
-  margin-bottom: 10px;
-}
-
-.footer-contact ul li i {
-  margin-right: 10px;
-} */
-
 #footer {
   background-color: #8B4513;
   color: #fff;

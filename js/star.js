@@ -12,10 +12,11 @@ function onStarClick(event) {
   var selectedStar = event.target;
   var selectedRating = selectedStar.parentNode.getElementsByClassName("rating-value")[0];
   
-  // Reset previous selected stars
-  var siblingStars = selectedStar.parentNode.getElementsByTagName("span");
-  for (var i = 0; i < siblingStars.length; i++) {
-    siblingStars[i].classList.remove("selected");
+  // Remove previous selected class from all stars in the same container
+  var starsContainer = selectedStar.parentNode;
+  var stars = starsContainer.getElementsByTagName("span");
+  for (var i = 0; i < stars.length; i++) {
+    stars[i].classList.remove("selected");
   }
   
   // Add selected class to clicked star and update rating value
