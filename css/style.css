@@ -28,39 +28,40 @@ a:hover{
 
 header{
   position: relative;
-  background-color: burlywood;
-  padding: 0 2rem;
+ padding: 0;
 }
-.container{
-  
-  width:100%;
 
-}
-.navbar{
-  width: 100%;
+.navbar {
+  width: 100vw;
   height: 60px;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  background-color: transparent; /* Remove the background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a faint shadow */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Add a thin line at the bottom */
 }
 .navbar .logo a{
   font-size: 25px;
   font-weight: bold;
-  color: aliceblue;
+  color: black;
 }
 .navbar .logo a:hover{
-  color: aliceblue;
+  color: black;
 }
+.logo .logo-link {
+  text-decoration: none;
+}
+
 .navbar .links{
   display: flex;
   gap: 2rem;
 }
 .navbar .links a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 20px;
   position: relative;
 }
@@ -87,10 +88,9 @@ header{
   display: none;
 }
 .action_button{
-  background-color: orange;
+  background-color: black;
   color: white;
   padding: 0.5rem 1rem;
-  border: 1px;
   outline: none;
   border-radius: 20px;
 }
