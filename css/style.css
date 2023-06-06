@@ -299,6 +299,65 @@ div.star-rating > span:hover ~ span:before {
   color: gold; /* Keep the color as gold for selected stars */
 }
 #footer {
+  background: linear-gradient(to bottom, #F4A460, #8B4513); /* Set gradient background colors */
+  border-top: 2px solid #000; /* Add a border */
+  padding: 20px;
+  color: #fff;
+}
+
+.container.text-center {
+  padding: 50px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-disc {
+  flex: 1;
+  max-width: 33%;
+}
+
+.contact-item {
+  margin-bottom: 20px;
+}
+
+.container-fluid.text-center {
+  padding-top: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.col-md-8.col-md-offset-2 {
+  flex: 1;
+  max-width: 66%;
+}
+
+.social ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social ul li {
+  margin: 0 10px;
+}
+
+.social ul li a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.social ul li a:hover {
+  color: #ccc;
+}
+
+/* #footer {
   background-color: #8B4513;
   color: #fff;
   padding: 20px;
@@ -362,4 +421,4 @@ div.star-rating > span:hover ~ span:before {
 
 .footer-row{
   width: 100%;
-}
+} */
