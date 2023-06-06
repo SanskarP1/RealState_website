@@ -27,14 +27,20 @@ a:hover{
 /*header*/
 
 header{
-  position: relative;
+ /* position: relative; */
  padding: 0;
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
   width: 100vw;
   height: 60px;
   max-width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -94,6 +100,44 @@ header{
   outline: none;
   border-radius: 20px;
 }
+.slider-section{
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+/* card section */
+
+.card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: orange;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: darkorange;
+}
+
 
 .container3 {
   background-color: transparent;
