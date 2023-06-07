@@ -111,6 +111,7 @@ header{
 /* card section */
 
 .card {
+  height: 200px;
   border: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
