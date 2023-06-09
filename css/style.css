@@ -326,6 +326,9 @@ video {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow-x: hidden  ;
+  margin: 0 auto;
+  width: calc(100% - 32px);
 }
 
 div.gallery {
@@ -336,6 +339,8 @@ div.gallery {
   padding: 10px;
   transition: transform 0.3s;
   height: calc(350px + 20px);
+  margin: 10px;
+  width: calc(25% - 20px);
 }
 
 div.gallery:hover {
@@ -386,6 +391,15 @@ div.star-rating > span:hover ~ span:before {
 .star-rating.selected > span:before,
 .star-rating.selected > span ~ span:before {
   color: gold; /* Keep the color as gold for selected stars */
+}
+
+.scroll-button {
+  margin: 10px;
+  padding: 8px 16px;
+  background-color: #545151;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 #footer {
   background: linear-gradient(to bottom, #F4A460, #8B4513); /* Set gradient background colors */
