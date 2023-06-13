@@ -1,17 +1,14 @@
-const scrollLeftButton = document.querySelector('.scroll-left');
-const scrollRightButton = document.querySelector('.scroll-right');
-const galleryContainer = document.querySelector('.gallery-container');
+document.addEventListener('DOMContentLoaded', function() {
+  const galleryContainer = document.querySelector('.gallery-container');
+  const gallery = document.querySelector('.gallery');
+  const scrollLeftBtn = document.querySelector('.scroll-btn.left');
+  const scrollRightBtn = document.querySelector('.scroll-btn.right');
 
-scrollLeftButton.addEventListener('click', () => {
-  galleryContainer.scrollBy({
-    left: -200, // Adjust the scrolling distance as needed
-    behavior: 'smooth',
+  scrollLeftBtn.addEventListener('click', function() {
+    gallery.scrollLeft -= 200; // Adjust the scroll distance as needed
   });
-});
 
-scrollRightButton.addEventListener('click', () => {
-  galleryContainer.scrollBy({
-    left: 200, // Adjust the scrolling distance as needed
-    behavior: 'smooth',
+  scrollRightBtn.addEventListener('click', function() {
+    gallery.scrollLeft += 200; // Adjust the scroll distance as needed
   });
 });

@@ -460,6 +460,39 @@ div.star-rating > span:hover ~ span:before {
   color: #ccc;
 }
 
+
+.gallery-container {
+  position: relative;
+}
+
+.scroll-btn-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scroll-btn {
+  /* Your button styles here */
+  /* For example: */
+  background-color: #fff;
+  color: #000;
+  font-size: 24px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.scroll-btn.left {
+  margin-right: 10px;
+}
+
+.scroll-btn.right {
+  margin-left: 10px;
+}
+
+
 /* #footer {
   background-color: #8B4513;
   color: #fff;
